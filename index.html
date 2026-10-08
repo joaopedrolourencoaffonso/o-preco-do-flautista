@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>O Preco do Flautista</title>
+
+    <style>
+        body{
+            background-color:#606c38;
+        }
+
+        .temas-principais {
+            display: grid;
+            grid-template-columns: auto auto;
+            justify-content: space-evenly;
+        }
+
+        .lado-a-lado {
+            display: grid;
+            grid-template-columns: auto auto;
+            padding: 10px;
+        }
+
+        .lado-a-lado div {
+            padding: 10px;
+            font-size: 20px;
+            text-align: center;
+        }
+
+        .centralizado-vertical {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .carousel {
+            display: grid;
+            grid-template-columns: auto auto auto;
+            padding: 10px;
+        }
+        .carousel div {
+            padding: 10px;
+            font-size: 20px;
+            text-align: center;
+        }
+
+        .footnote-imgs {
+            height: auto;
+        }
+
+        .footnote .lado-a-lado {
+            grid-template-columns: repeat(2, minmax(0, 1fr));
+        }
+
+        .footnote .lado-a-lado > div {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 120px;
+        }
+
+        .box {
+            border: 5px solid #99582a;
+            background-color: #ffe6a7;
+            border-radius: 25px;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="temas-principais" class="temas-principais">
+        <div>
+            <p>Uma estória sobre coragem</p>
+        </div>
+        <div>
+            <p>Uma releitura de um clássico.</p>
+        </div>
+    </div>
+
+    <div id="synopsis" class="lado-a-lado box">
+        <div>
+            <h1>Hamelin é uma cidade rica...</h1>
+            
+            <p>...movimentada e próspera, mas sofre Com um problema que ninguém consegue resolver: uma infestação de ratos toma conta das ruas, das casas e dos comércios. </p>
+            
+            <p>Enquanto os moradores discutem de quem é a culpa, surge um misterioso flautista que promete eliminar todos os roedores... em troca de uma recompensa.</p>
+    
+            <p>Quando a cidade decide não cumprir o acordo, as consequéncias são muito mais graves do que qualquer poderia imaginar e aquilo que parecia apenas uma disputa por dinheiro transforma-se em uma jornada repleta de desafios, perigos e descobertas.</p>
+            
+            <p>Entre florestas desconhecidas, mares distantes e segredos antigos, um homem que perdeu tudo precisará encontrar coragem para enfrentar seus erros e tentar salvar aqueles que mais ama.</p>
+            
+            <p>Em uma releitura do clássico conto, João Pedro L. Affonso apresenta uma aventura sobre responsabilidade, honra e as consequências das escolhas que fazemos. Uma história para jovens leitores, mas também para qualquer adulto que já tenha desejado colher os frutos sem arcar com os custos.</p>
+        </div>
+
+        <div>
+            <img src="./img/capa_temporaria.png">
+        </div>
+
+    </div>
+
+    <br>
+
+    <div id="carousel" class="box">
+        <h2>Veja por dentro!</h2>
+
+        <div class="carousel">
+
+            <div>
+                <img src="./img/figura-1.png">
+            </div>
+
+            <div>
+                <img src="./img/figura-2.png">
+            </div>
+
+            <div>
+                <img src="./img/figura-3.png">
+            </div>
+
+            <div>
+                <img src="./img/figura-4.png">
+            </div>
+
+            <div>
+                <img src="./img/figura-5.png">
+            </div>
+
+            <div>
+                <img src="./img/figura-6.png">
+            </div>
+                
+        </div>
+
+    </div>
+
+    <br>
+
+    <div class="author box">
+        <div  class="lado-a-lado centralizado-vertical">
+            <div>
+                <h2>Sobre o Autor</h2>
+                <p>João nasceu no Rio de Janeiro (RJ) e foi criado em Araruama (RJ), onde seus pais despertaram nele o   interesse pela leitura, pela história e pela ciência.</p>
+        
+                <p>Engenheiro de Telecomunicações, sempre cultivou o amor pela arte de contar histórias, com especial paixão pelos clássicos e pelas lendas da Antiguidade.</p>
+        
+                <p>Atualmente, mora em São Paulo, onde trabalha com tecnologia da informação.</p>
+            </div>
+
+            <div>
+                <img src="./img/foto-autor.png">
+            </div>
+        </div>
+    </div>
+
+    <div id="footnote" class="footnote">
+        <div class="lado-a-lado">
+            <div>
+                <a href="https://asesdaliteratura.com/"><img src="./img/logo-ases.png" class="footnote-imgs" style="width: 15%;" alt="Ases da Literatura"></a>
+            </div>
+            <div>
+                <a href="https://www.linkedin.com/in/jo%C3%A3o-pedro-louren%C3%A7o-affonso-77338a131/" ><img src="./img/LinkedIn_logo_initials.png" class="footnote-imgs" style="width: 5%;" alt="Linkedin do Autor"></a>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>
