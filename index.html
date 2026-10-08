@@ -1,169 +1,286 @@
 <!DOCTYPE html>
-<html>
+<html lang="pt-BR">
 
 <head>
-    <title>O Preco do Flautista</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Conheça O Preço do Flautista, uma releitura do clássico conto por João Pedro L. Affonso.">
+    <title>O Preço do Flautista | João Pedro L. Affonso</title>
 
     <style>
-        body{
-            background-color:#606c38;
-            font-family: "Trebuchet MS", Tahoma, sans-serif;
+        :root {
+            color-scheme: light;
+            --forest: #293b32;
+            --forest-light: #3d5747;
+            --parchment: #f5f0e5;
+            --paper: #fffdf8;
+            --ink: #292c25;
+            --muted: #62665b;
+            --terracotta: #9c4e36;
+            --border: #ded5c3;
         }
 
-        .temas-principais {
-            display: grid;
-            grid-template-columns: auto auto;
-            justify-content: space-evenly;
+        * {
+            box-sizing: border-box;
         }
 
-        .lado-a-lado {
-            display: grid;
-            grid-template-columns: auto auto;
-            padding: 10px;
+        body {
+            margin: 0;
+            background: var(--forest);
+            color: var(--ink);
+            font-family: "Trebuchet MS", Arial, sans-serif;
+            font-size: 1rem;
+            line-height: 1.7;
         }
 
-        .lado-a-lado div {
-            padding: 10px;
-            font-size: 20px;
+        img {
+            display: block;
+            max-width: 100%;
+            height: auto;
+        }
+
+        a {
+            color: var(--terracotta);
+        }
+
+        a:focus-visible {
+            outline: 3px solid var(--terracotta);
+            outline-offset: 4px;
+        }
+
+        .page-shell {
+            width: min(100% - 2rem, 68rem);
+            margin-inline: auto;
+        }
+
+        .site-header {
+            padding: clamp(2.5rem, 7vw, 5rem) 0 2rem;
+            color: var(--parchment);
             text-align: center;
         }
 
-        .centralizado-vertical {
+        .eyebrow {
+            margin: 0 0 0.5rem;
+            color: #d5bd8a;
+            font-size: 0.8rem;
+            font-weight: 700;
+            letter-spacing: 0.14em;
+            text-transform: uppercase;
+        }
+
+        h1,
+        h2 {
+            font-family: Georgia, "Times New Roman", serif;
+            line-height: 1.2;
+        }
+
+        h1 {
+            margin: 0;
+            font-size: clamp(2.3rem, 6vw, 4rem);
+            font-weight: 500;
+        }
+
+        .taglines {
             display: flex;
             justify-content: center;
+            flex-wrap: wrap;
+            gap: 0.5rem 1.5rem;
+            margin: 1rem 0 0;
+            color: #e5ddca;
+        }
+
+        main {
+            display: grid;
+            gap: 1.5rem;
+            padding-bottom: 2rem;
+        }
+
+        .panel {
+            padding: clamp(1.25rem, 4vw, 2.5rem);
+            border: 1px solid var(--border);
+            border-radius: 0.75rem;
+            background: var(--parchment);
+            box-shadow: 0 0.75rem 2rem rgb(17 25 20 / 12%);
+        }
+
+        .synopsis {
+            display: grid;
+            grid-template-columns: minmax(0, 1.5fr) minmax(12rem, 0.8fr);
             align-items: center;
+            gap: clamp(1.5rem, 5vw, 3.5rem);
+        }
+
+        .synopsis h2,
+        .panel h2 {
+            margin: 0 0 1rem;
+            color: var(--forest);
+            font-size: clamp(1.6rem, 3vw, 2.2rem);
+        }
+
+        .synopsis p {
+            margin: 0 0 1rem;
+        }
+
+        .synopsis p:last-child,
+        .author p:last-child {
+            margin-bottom: 0;
+        }
+
+        .book-cover {
+            width: min(100%, 20rem);
+            margin-inline: auto;
+            border: 1px solid var(--border);
+            border-radius: 0.25rem;
+            box-shadow: 0 0.5rem 1.25rem rgb(41 44 37 / 16%);
+        }
+
+        .gallery h2 {
+            margin-bottom: 1.5rem;
         }
 
         .carousel {
             display: grid;
-            grid-template-columns: auto auto auto;
-            padding: 10px;
-        }
-        .carousel div {
-            padding: 10px;
-            font-size: 20px;
-            text-align: center;
+            grid-template-columns: repeat(3, minmax(0, 1fr));
+            gap: 1rem;
         }
 
-        .footnote-imgs {
-            height: auto;
+        .carousel figure {
+            display: grid;
+            place-items: center;
+            min-height: 12rem;
+            margin: 0;
+            padding: 0.75rem;
+            border: 1px solid var(--border);
+            border-radius: 0.5rem;
+            background: var(--paper);
         }
 
-        .footnote .lado-a-lado {
-            grid-template-columns: repeat(2, minmax(0, 1fr));
+        .carousel img {
+            max-height: 22rem;
+            object-fit: contain;
         }
 
-        .footnote .lado-a-lado > div {
+        .author {
+            display: grid;
+            grid-template-columns: minmax(0, 1.5fr) minmax(12rem, 0.8fr);
+            align-items: center;
+            gap: clamp(1.5rem, 5vw, 3.5rem);
+        }
+
+        .author p {
+            margin: 0 0 1rem;
+        }
+
+        .author-photo {
+            width: min(100%, 22rem);
+            margin-inline: auto;
+            border-radius: 0.5rem;
+        }
+
+        .site-footer {
             display: flex;
             justify-content: center;
             align-items: center;
-            min-height: 120px;
+            flex-wrap: wrap;
+            gap: 2rem;
+            padding: 1rem 0 2.5rem;
         }
 
-        .box {
-            border: 5px solid #99582a;
-            background-color: #ffe6a7;
-            border-radius: 25px;
+        .site-footer a {
+            display: grid;
+            place-items: center;
+            min-width: 7rem;
+            min-height: 5rem;
+            padding: 0.75rem;
+            border-radius: 0.5rem;
+            background: var(--parchment);
+        }
+
+        .publisher-logo {
+            width: 6rem;
+        }
+
+        .linkedin-logo {
+            width: 2.5rem;
+        }
+
+        @media (max-width: 700px) {
+            .synopsis,
+            .author {
+                grid-template-columns: 1fr;
+            }
+
+            .book-cover {
+                width: min(70%, 18rem);
+            }
+
+            .carousel {
+                grid-template-columns: repeat(2, minmax(0, 1fr));
+            }
+        }
+
+        @media (max-width: 420px) {
+            .carousel {
+                grid-template-columns: 1fr;
+            }
         }
     </style>
 </head>
 
 <body>
-    <div id="temas-principais" class="temas-principais">
-        <div>
-            <p>Uma estória sobre coragem</p>
+    <header class="site-header page-shell">
+        <!--<p class="eyebrow">Uma releitura de um clássico</p>-->
+        <h1>O Preço do Flautista</h1>
+        <div class="taglines">
+            <!--<span>Uma história sobre coragem</span>-->
+            <span>Uma aventura sobre escolhas e responsabilidade</span>
         </div>
-        <div>
-            <p>Uma releitura de um clássico.</p>
-        </div>
-    </div>
+    </header>
 
-    <div id="synopsis" class="lado-a-lado box">
-        <div>
-            <h1>Hamelin é uma cidade rica...</h1>
-            
-            <p>...movimentada e próspera, mas sofre Com um problema que ninguém consegue resolver: uma infestação de ratos toma conta das ruas, das casas e dos comércios. </p>
-            
-            <p>Enquanto os moradores discutem de quem é a culpa, surge um misterioso flautista que promete eliminar todos os roedores... em troca de uma recompensa.</p>
-    
-            <p>Quando a cidade decide não cumprir o acordo, as consequéncias são muito mais graves do que qualquer poderia imaginar e aquilo que parecia apenas uma disputa por dinheiro transforma-se em uma jornada repleta de desafios, perigos e descobertas.</p>
-            
-            <p>Entre florestas desconhecidas, mares distantes e segredos antigos, um homem que perdeu tudo precisará encontrar coragem para enfrentar seus erros e tentar salvar aqueles que mais ama.</p>
-            
-            <p>Em uma releitura do clássico conto, João Pedro L. Affonso apresenta uma aventura sobre responsabilidade, honra e as consequências das escolhas que fazemos. Uma história para jovens leitores, mas também para qualquer adulto que já tenha desejado colher os frutos sem arcar com os custos.</p>
-        </div>
-
-        <div>
-            <img src="./img/capa_temporaria.png">
-        </div>
-
-    </div>
-
-    <br>
-
-    <div id="carousel" class="box">
-        <h2>Veja por dentro!</h2>
-
-        <div class="carousel">
-
+    <main class="page-shell">
+        <section id="synopsis" class="panel synopsis" aria-labelledby="synopsis-title">
             <div>
-                <img src="./img/figura-1.png">
+                <h2 id="synopsis-title">Hamelin é uma cidade rica...</h2>
+                <p>...movimentada e próspera, mas sofre com um problema que ninguém consegue resolver: uma infestação de ratos toma conta das ruas, das casas e dos comércios.</p>
+                <p>Enquanto os moradores discutem de quem é a culpa, surge um misterioso flautista que promete eliminar todos os roedores... em troca de uma recompensa.</p>
+                <p>Quando a cidade decide não cumprir o acordo, as consequências são muito mais graves do que qualquer um poderia imaginar. O que parecia apenas uma disputa por dinheiro transforma-se em uma jornada repleta de desafios, perigos e descobertas.</p>
+                <p>Entre florestas desconhecidas, mares distantes e segredos antigos, um homem que perdeu tudo precisará encontrar coragem para enfrentar seus erros e tentar salvar aqueles que mais ama.</p>
+                <p>Em uma releitura do clássico conto, João Pedro L. Affonso apresenta uma aventura sobre responsabilidade, honra e as consequências das escolhas que fazemos. Uma história para jovens leitores, mas também para qualquer adulto que já tenha desejado colher os frutos sem arcar com os custos.</p>
             </div>
+            <img class="book-cover" src="./img/capa_temporaria.png" alt="Capa temporária de O Preço do Flautista" fetchpriority="high">
+        </section>
 
-            <div>
-                <img src="./img/figura-2.png">
+        <section id="carousel" class="panel gallery" aria-labelledby="gallery-title">
+            <h2 id="gallery-title">Veja por dentro</h2>
+            <div class="carousel">
+                <figure><img src="./img/figura-1.png" alt="Ilustração interna do livro, página 1" loading="lazy"></figure>
+                <figure><img src="./img/figura-2.png" alt="Ilustração interna do livro, página 2" loading="lazy"></figure>
+                <figure><img src="./img/figura-3.png" alt="Ilustração interna do livro, página 3" loading="lazy"></figure>
+                <figure><img src="./img/figura-4.png" alt="Ilustração interna do livro, página 4" loading="lazy"></figure>
+                <figure><img src="./img/figura-5.png" alt="Ilustração interna do livro, página 5" loading="lazy"></figure>
+                <figure><img src="./img/figura-6.png" alt="Ilustração interna do livro, página 6" loading="lazy"></figure>
             </div>
+        </section>
 
+        <section class="panel author" aria-labelledby="author-title">
             <div>
-                <img src="./img/figura-3.png">
-            </div>
-
-            <div>
-                <img src="./img/figura-4.png">
-            </div>
-
-            <div>
-                <img src="./img/figura-5.png">
-            </div>
-
-            <div>
-                <img src="./img/figura-6.png">
-            </div>
-                
-        </div>
-
-    </div>
-
-    <br>
-
-    <div class="author box">
-        <div  class="lado-a-lado centralizado-vertical">
-            <div>
-                <h2>Sobre o Autor</h2>
-                <p>João nasceu no Rio de Janeiro (RJ) e foi criado em Araruama (RJ), onde seus pais despertaram nele o   interesse pela leitura, pela história e pela ciência.</p>
-        
+                <h2 id="author-title">Sobre o autor</h2>
+                <p>João nasceu no Rio de Janeiro (RJ) e foi criado em Araruama (RJ), onde seus pais despertaram nele o interesse pela leitura, pela história e pela ciência.</p>
                 <p>Engenheiro de Telecomunicações, sempre cultivou o amor pela arte de contar histórias, com especial paixão pelos clássicos e pelas lendas da Antiguidade.</p>
-        
                 <p>Atualmente, mora em São Paulo, onde trabalha com tecnologia da informação.</p>
             </div>
+            <img class="author-photo" src="./img/foto-autor.png" alt="João Pedro L. Affonso" loading="lazy">
+        </section>
+    </main>
 
-            <div>
-                <img src="./img/foto-autor.png" style="height: auto; width: 90%;">
-            </div>
-        </div>
-    </div>
-
-    <div id="footnote" class="footnote">
-        <div class="lado-a-lado">
-            <div>
-                <a href="https://asesdaliteratura.com/"><img src="./img/logo-ases.png" class="footnote-imgs" style="width: 15%;" alt="Ases da Literatura"></a>
-            </div>
-            <div>
-                <a href="https://www.linkedin.com/in/jo%C3%A3o-pedro-louren%C3%A7o-affonso-77338a131/" ><img src="./img/LinkedIn_logo_initials.png" class="footnote-imgs" style="width: 5%;" alt="Linkedin do Autor"></a>
-            </div>
-        </div>
-    </div>
-
+    <footer id="footnote" class="site-footer page-shell">
+        <a href="https://asesdaliteratura.com/" aria-label="Ases da Literatura">
+            <img class="publisher-logo" src="./img/logo-ases.png" alt="Ases da Literatura" loading="lazy">
+        </a>
+        <a href="https://www.linkedin.com/in/jo%C3%A3o-pedro-louren%C3%A7o-affonso-77338a131/" aria-label="LinkedIn de João Pedro L. Affonso">
+            <img class="linkedin-logo" src="./img/LinkedIn_logo_initials.png" alt="" loading="lazy">
+        </a>
+    </footer>
 </body>
 
 </html>
