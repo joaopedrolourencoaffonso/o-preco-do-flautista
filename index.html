@@ -15,6 +15,7 @@
             --parchment: #f5f0e5;
             --paper: #fffdf8;
             --ink: #292c25;
+            --panel-blue: #f5f0e5;
             --muted: #62665b;
             --terracotta: #9c4e36;
             --border: #ded5c3;
@@ -32,10 +33,10 @@
             font-family: "Trebuchet MS", Arial, sans-serif;
             font-size: 1rem;
             line-height: 1.7;
-            background-image: url("./img/cover-border-3.png");
-            background-repeat: no-repeat;
+            background-image: url("./img/bricks.jpg");
+            /*background-repeat: no-repeat;
             background-position: center;
-            background-size: 100% 100%;
+            background-size: 100% 100%;*/
         }
 
         img {
@@ -45,7 +46,7 @@
         }
 
         a {
-            color: var(--terracotta);
+            color: var(--ink);
         }
 
         a:focus-visible {
@@ -64,9 +65,13 @@
             text-align: center;
         }
 
+        #header {
+            margin-inline: auto;
+        }
+
         .eyebrow {
             margin: 0 0 0.5rem;
-            color: #d5bd8a;
+            color: #ffe169;
             font-size: 0.8rem;
             font-weight: 700;
             letter-spacing: 0.14em;
@@ -102,9 +107,10 @@
 
         .panel {
             padding: clamp(1.25rem, 4vw, 2.5rem);
-            border: 1px solid var(--border);
+            border: 1px solid var(--panel-blue);
             border-radius: 0.75rem;
-            background: var(--parchment);
+            background: var(--panel-blue);
+            color: var(--ink);
             box-shadow: 0 0.75rem 2rem rgb(17 25 20 / 12%);
         }
 
@@ -118,7 +124,7 @@
         .synopsis h2,
         .panel h2 {
             margin: 0 0 1rem;
-            color: var(--forest);
+            color: var(--ink);
             font-size: clamp(1.6rem, 3vw, 2.2rem);
         }
 
@@ -234,12 +240,13 @@
 
 <body>
     <header class="site-header page-shell">
-        <!--<p class="eyebrow">Uma releitura de um clássico</p>-->
-        <h1>O Preço do Flautista</h1>
+        <p class="eyebrow">Uma releitura moderna de um conto clássico</p>
+        <!--<h1>O Preço do Flautista</h1>
         <div class="taglines">
-            <!--<span>Uma história sobre coragem</span>-->
-            <span>Uma aventura sobre escolhas e responsabilidade</span>
-        </div>
+        <span>Uma história sobre coragem</span>
+        <span>Uma aventura sobre escolhas e responsabilidade</span>
+        </div>-->
+        <img id="header" src="./img/banner.png" alt="O Preço do Flautista: uma aventura sobre escolhas e responsabilidade">
     </header>
 
     <main class="page-shell">
