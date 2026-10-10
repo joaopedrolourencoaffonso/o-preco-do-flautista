@@ -1,1 +1,3 @@
 Página oficial do livro "O Preço do Flautista"
+
+Favicon feito com a <a href="https://unsplash.com/pt-br/ilustra%C3%A7%C3%B5es/uma-grade-de-icones-pretos-de-musica-e-midia-JEja40Y6JBE?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Ilustração</a> de <a href="https://unsplash.com/pt-br/@roywj/ilustra%C3%A7%C3%B5es?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Royyan Wijaya</a><a href="https://unsplash.com/pt-br/ilustra%C3%A7%C3%B5es?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>.
