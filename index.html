@@ -211,6 +211,14 @@
                 grid-template-columns: 1fr;
             }
         }
+
+        dialog {
+            width: 50%;
+        }
+
+        button {
+            cursor: pointer;
+        }
     </style>
 </head>
 
@@ -230,18 +238,33 @@
                 <p>Entre florestas desconhecidas, mares distantes e segredos antigos, um homem que perdeu tudo precisará encontrar coragem para enfrentar seus erros e tentar salvar aqueles que mais ama.</p>
                 <p>Em uma releitura do clássico conto, João Pedro L. Affonso apresenta uma aventura sobre responsabilidade, honra e as consequências das escolhas que fazemos. Uma história para jovens leitores, mas também para qualquer adulto que já tenha desejado colher os frutos sem arcar com os custos.</p>
             </div>
-            <img class="book-cover" src="https://raw.githubusercontent.com/joaopedrolourencoaffonso/o-preco-do-flautista/refs/heads/main/public/capa_temporaria.png" alt="Capa temporária de O Preço do Flautista" fetchpriority="high">
+            <button onclick="mostraDialog(6)">
+                <img src="https://raw.githubusercontent.com/joaopedrolourencoaffonso/o-preco-do-flautista/refs/heads/main/public/capa_temporaria.png" alt="Capa temporária de O Preço do Flautista" fetchpriority="high">
+            </button>
         </section>
 
         <section id="carousel" class="panel gallery" aria-labelledby="gallery-title">
             <h2 id="gallery-title">Veja por dentro</h2>
             <div class="carousel">
-                <figure><img src="https://raw.githubusercontent.com/joaopedrolourencoaffonso/o-preco-do-flautista/refs/heads/main/public/figura-1.png" alt="Ilustração interna do livro, página 1" loading="lazy"></figure>
-                <figure><img src="https://raw.githubusercontent.com/joaopedrolourencoaffonso/o-preco-do-flautista/refs/heads/main/public/figura-2.png" alt="Ilustração interna do livro, página 2" loading="lazy"></figure>
-                <figure><img src="https://raw.githubusercontent.com/joaopedrolourencoaffonso/o-preco-do-flautista/refs/heads/main/public/figura-3.png" alt="Ilustração interna do livro, página 3" loading="lazy"></figure>
-                <figure><img src="https://raw.githubusercontent.com/joaopedrolourencoaffonso/o-preco-do-flautista/refs/heads/main/public/figura-4.png" alt="Ilustração interna do livro, página 4" loading="lazy"></figure>
-                <figure><img src="https://raw.githubusercontent.com/joaopedrolourencoaffonso/o-preco-do-flautista/refs/heads/main/public/figura-5.png" alt="Ilustração interna do livro, página 5" loading="lazy"></figure>
-                <figure><img src="https://raw.githubusercontent.com/joaopedrolourencoaffonso/o-preco-do-flautista/refs/heads/main/public/figura-6.png" alt="Ilustração interna do livro, página 6" loading="lazy"></figure>
+                <button onclick="mostraDialog(0)">
+                    <figure><img src="https://raw.githubusercontent.com/joaopedrolourencoaffonso/o-preco-do-flautista/refs/heads/main/public/figura-1.png" alt="Figura 1" loading="lazy"></figure>
+                </button>
+                <button onclick="mostraDialog(1)">
+                    <figure><img src="https://raw.githubusercontent.com/joaopedrolourencoaffonso/o-preco-do-flautista/refs/heads/main/public/figura-2.png" alt="Figura 2" loading="lazy"></figure>
+                </button>
+                <button onclick="mostraDialog(2)">
+                    <figure><img src="https://raw.githubusercontent.com/joaopedrolourencoaffonso/o-preco-do-flautista/refs/heads/main/public/figura-3.png" alt="Figura 3" loading="lazy"></figure>
+                </button>
+                </button>
+                <button onclick="mostraDialog(3)">
+                    <figure><img src="https://raw.githubusercontent.com/joaopedrolourencoaffonso/o-preco-do-flautista/refs/heads/main/public/figura-4.png" alt="Figura 4" loading="lazy"></figure>
+                </button>
+                <button onclick="mostraDialog(4)">
+                    <figure><img src="https://raw.githubusercontent.com/joaopedrolourencoaffonso/o-preco-do-flautista/refs/heads/main/public/figura-5.png" alt="Figura 5" loading="lazy"></figure>
+                </button>
+                <button onclick="mostraDialog(5)">
+                    <figure><img src="https://raw.githubusercontent.com/joaopedrolourencoaffonso/o-preco-do-flautista/refs/heads/main/public/figura-6.png" alt="Figura 6" loading="lazy"></figure>
+                </button>
             </div>
         </section>
 
@@ -264,6 +287,43 @@
             <img class="linkedin-logo" src="https://raw.githubusercontent.com/joaopedrolourencoaffonso/o-preco-do-flautista/refs/heads/main/public/LinkedIn_logo_initials.png" alt="" loading="lazy">
         </a>
     </footer>
+
+    <dialog id="myDialog">
+        <img id="imagem-dialog" style="width: 100%" src="https://raw.githubusercontent.com/joaopedrolourencoaffonso/o-preco-do-flautista/refs/heads/main/public/figura-1.png" alt="Figura 1" loading="lazy"></figure>
+    </dialog>
+
+    <script>
+        const dialog = document.querySelector("dialog");
+        dialog.addEventListener("click", onClick);
+        //dialog.showModal();
+
+        function onClick(event) {
+            if (event.target === dialog) {
+                dialog.close();
+            }
+        }
+
+        function mostraDialog(idDaImagem) {
+            const listaDeFiguras = [
+                "https://raw.githubusercontent.com/joaopedrolourencoaffonso/o-preco-do-flautista/refs/heads/main/public/figura-1.png",
+                "https://raw.githubusercontent.com/joaopedrolourencoaffonso/o-preco-do-flautista/refs/heads/main/public/figura-2.png",
+                "https://raw.githubusercontent.com/joaopedrolourencoaffonso/o-preco-do-flautista/refs/heads/main/public/figura-3.png",
+                "https://raw.githubusercontent.com/joaopedrolourencoaffonso/o-preco-do-flautista/refs/heads/main/public/figura-4.png",
+                "https://raw.githubusercontent.com/joaopedrolourencoaffonso/o-preco-do-flautista/refs/heads/main/public/figura-5.png",
+                "https://raw.githubusercontent.com/joaopedrolourencoaffonso/o-preco-do-flautista/refs/heads/main/public/figura-6.png",
+                "https://raw.githubusercontent.com/joaopedrolourencoaffonso/o-preco-do-flautista/refs/heads/main/public/capa_temporaria.png"
+            ]
+            const imagem = document.getElementById("imagem-dialog");
+            imagem.src = listaDeFiguras[idDaImagem];
+            const dialog = document.getElementById("myDialog");
+            dialog.showModal();
+        }
+
+        function fechaDialog() {
+            const dialog = document.getElementById("myDialog");
+            dialog.close();
+        }
+    </script>
 </body>
 
 </html>
