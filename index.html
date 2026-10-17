@@ -4,7 +4,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="Livro: O Preço do Flautista. Conto de fadas. Literatura Infantil. Uma releitura do clássico conto por João Pedro L. Affonso.">
+    <meta name="description"
+        content="Livro: O Preço do Flautista. Conto de fadas. Literatura Infantil. Uma releitura do clássico conto por João Pedro L. Affonso.">
+    <meta property="og:image" content="https://joaopedrolourencoaffonso.github.io/o-preco-do-flautista/public/capa_temporaria.png">
+    <meta property="og:title" content="O Preço do Flautista | João Pedro L. Affonso">
+    <meta property="og:description" content="Uma releitura do clássico conto de Hamelin sobre responsabilidade, honra e as consequências das escolhas.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://joaopedrolourencoaffonso.github.io/o-preco-do-flautista/">
+
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="O Preço do Flautista | João Pedro L. Affonso">
+    <meta name="twitter:description" content="Uma releitura do clássico conto de Hamelin sobre responsabilidade, honra e as consequências das escolhas.">
+    <meta name="twitter:image" content="https://joaopedrolourencoaffonso.github.io/o-preco-do-flautista/public/capa_temporaria.png">
     <title>O Preço do Flautista | João Pedro L. Affonso</title>
     <link rel="icon" type="image/x-icon" href="public/favicon.png">
 
@@ -193,6 +204,7 @@
         }
 
         @media (max-width: 700px) {
+
             .synopsis,
             .author {
                 grid-template-columns: 1fr;
@@ -255,27 +267,39 @@
             cursor: pointer;
         }
     </style>
+
+    <link rel="canonical" href="https://joaopedrolourencoaffonso.github.io/o-preco-do-flautista/" />
 </head>
 
 <body>
     <header class="site-header page-shell">
         <!--<h1>O preço do Flautista por João Pedro L. Affonso</h1>-->
         <h1 class="eyebrow">Uma releitura moderna de um conto imortal</h1>
-        <img id="header" src="public/banner.png" alt="O Preço do Flautista: uma aventura sobre escolhas e responsabilidade">
+        <img id="header" src="public/banner.png"
+            alt="O Preço do Flautista: uma aventura sobre escolhas e responsabilidade">
     </header>
 
     <main class="page-shell">
         <section id="synopsis" class="panel synopsis" aria-labelledby="synopsis-title">
             <div>
                 <h2 id="synopsis-title">Hamelin é uma cidade rica...</h2>
-                <p>...movimentada e próspera, mas sofre com um problema que ninguém consegue resolver: uma infestação de ratos toma conta das ruas, das casas e dos comércios.</p>
-                <p>Enquanto os moradores discutem de quem é a culpa, surge um misterioso flautista que promete eliminar todos os roedores... em troca de uma recompensa.</p>
-                <p>Quando a cidade decide não cumprir o acordo, as consequências são muito mais graves do que qualquer um poderia imaginar. O que parecia apenas uma disputa por dinheiro transforma-se em uma jornada repleta de desafios, perigos e descobertas.</p>
-                <p>Entre florestas desconhecidas, mares distantes e segredos antigos, um homem que perdeu tudo precisará encontrar coragem para enfrentar seus erros e tentar salvar aqueles que mais ama.</p>
-                <p>Em uma releitura do clássico conto, João Pedro L. Affonso apresenta uma aventura sobre responsabilidade, honra e as consequências das escolhas que fazemos. Uma história para jovens leitores, mas também para qualquer adulto que já tenha desejado colher os frutos sem arcar com os custos.</p>
+                <p>...movimentada e próspera, mas sofre com um problema que ninguém consegue resolver: uma infestação de
+                    ratos toma conta das ruas, das casas e dos comércios.</p>
+                <p>Enquanto os moradores discutem de quem é a culpa, surge um misterioso flautista que promete eliminar
+                    todos os roedores... em troca de uma recompensa.</p>
+                <p>Quando a cidade decide não cumprir o acordo, as consequências são muito mais graves do que qualquer
+                    um poderia imaginar. O que parecia apenas uma disputa por dinheiro transforma-se em uma jornada
+                    repleta de desafios, perigos e descobertas.</p>
+                <p>Entre florestas desconhecidas, mares distantes e segredos antigos, um homem que perdeu tudo precisará
+                    encontrar coragem para enfrentar seus erros e tentar salvar aqueles que mais ama.</p>
+                <p>Em uma releitura do clássico conto, João Pedro L. Affonso apresenta uma aventura sobre
+                    responsabilidade, honra e as consequências das escolhas que fazemos. Uma história para jovens
+                    leitores, mas também para qualquer adulto que já tenha desejado colher os frutos sem arcar com os
+                    custos.</p>
             </div>
             <button onclick="mostraDialog(6)">
-                <img src="public/capa_temporaria.png" alt="Capa temporária de O Preço do Flautista" fetchpriority="high">
+                <img src="public/capa_temporaria.png" alt="Capa temporária de O Preço do Flautista"
+                    fetchpriority="high">
             </button>
 
             <button class="botaoOndeComprar" onclick="ondeComprarDialog()">Onde comprar!</button>
@@ -291,17 +315,22 @@
                     <figure><img src="public/figura-2.png" alt="O Flautista leva os ratos" loading="lazy"></figure>
                 </button>
                 <button onclick="mostraDialog(2)">
-                    <figure><img src="public/figura-3.png" alt="O podo de Hamelin decide não pagar o flautista" loading="lazy"></figure>
+                    <figure><img src="public/figura-3.png" alt="O podo de Hamelin decide não pagar o flautista"
+                            loading="lazy"></figure>
                 </button>
                 </button>
                 <button onclick="mostraDialog(3)">
-                    <figure><img src="public/figura-4.png" alt="A esposa do prefeito chora, pois as crianças foram levadas. O prefeito lamenta, impotente." loading="lazy"></figure>
+                    <figure><img src="public/figura-4.png"
+                            alt="A esposa do prefeito chora, pois as crianças foram levadas. O prefeito lamenta, impotente."
+                            loading="lazy"></figure>
                 </button>
                 <button onclick="mostraDialog(4)">
-                    <figure><img src="public/figura-5.png" alt="O prefeito espiona o minotauro." loading="lazy"></figure>
+                    <figure><img src="public/figura-5.png" alt="O prefeito espiona o minotauro." loading="lazy">
+                    </figure>
                 </button>
                 <button onclick="mostraDialog(5)">
-                    <figure><img src="public/figura-6.png" alt="O prefeito conversa com o flautista uma última vez." loading="lazy"></figure>
+                    <figure><img src="public/figura-6.png" alt="O prefeito conversa com o flautista uma última vez."
+                            loading="lazy"></figure>
                 </button>
             </div>
         </section>
@@ -309,8 +338,10 @@
         <section class="panel author" aria-labelledby="author-title">
             <div>
                 <h2 id="author-title">Sobre o autor</h2>
-                <p>João nasceu no Rio de Janeiro (RJ) e foi criado em Araruama (RJ), onde seus pais despertaram nele o interesse pela leitura, pela história e pela ciência.</p>
-                <p>Engenheiro de Telecomunicações, sempre cultivou o amor pela arte de contar histórias, com especial paixão pelos clássicos e pelas lendas da Antiguidade.</p>
+                <p>João nasceu no Rio de Janeiro (RJ) e foi criado em Araruama (RJ), onde seus pais despertaram nele o
+                    interesse pela leitura, pela história e pela ciência.</p>
+                <p>Engenheiro de Telecomunicações, sempre cultivou o amor pela arte de contar histórias, com especial
+                    paixão pelos clássicos e pelas lendas da Antiguidade.</p>
                 <p>Atualmente, mora em São Paulo, onde trabalha com tecnologia da informação.</p>
             </div>
             <img class="author-photo" src="public/foto-autor.png" alt="João Pedro L. Affonso" loading="lazy">
@@ -321,7 +352,8 @@
         <a href="https://asesdaliteratura.com/" aria-label="Ases da Literatura">
             <img class="publisher-logo" src="public/logo-ases.png" alt="Ases da Literatura" loading="lazy">
         </a>
-        <a href="https://www.linkedin.com/in/jo%C3%A3o-pedro-louren%C3%A7o-affonso-77338a131/" aria-label="LinkedIn de João Pedro L. Affonso">
+        <a href="https://www.linkedin.com/in/jo%C3%A3o-pedro-louren%C3%A7o-affonso-77338a131/"
+            aria-label="LinkedIn de João Pedro L. Affonso">
             <img class="linkedin-logo" src="public/LinkedIn_logo_initials.png" alt="" loading="lazy">
         </a>
         <a href="https://www.instagram.com/joaopedrolourencoaffonso/" aria-label="Instagram de João Pedro L. Affonso">
@@ -334,11 +366,26 @@
     </dialog>
 
     <dialog id="ondeComprarDialog">
-        <a class="marketplace-link" style="background-color: #FF9900; color: #000000" href="https://www.amazon.com.br/Placa-Aten%C3%A7%C3%A3o-Shape-Constru%C3%A7%C3%A3o-18x23/dp/B09G8F7CG1/ref=sr_1_10?__mk_pt_BR=%C3%85M%C3%85%C5%BD%C3%95%C3%91&crid=391NCLIRO5THN&dib=eyJ2IjoiMSJ9.j6wTunJaeL7CZ1IgNc2gjF_4BP-Dl7YUqxE_5LG0NUsg0ARA701OwqVgGGdBsdFYt83-w-PEqD5LfJ4lQ8K293_ZLeisui_gVrWAkOODfZa58a4o_AcoY_UotDebdw2f81Xc4Rqtn8-wQi6DTWSdtVfxBf-U8orx2QqSNHXxGhhQql-JknsE4YULllhg4X46R8i62IMZldDY85B828AefqmYajrmmr1A1gkAoRh-yH8my4xCPg3Y7Ank7EOtGvtaeK3lyGfD01vnDGepCXfYzo91_v399AYaYd5k1AJm45Q.L4cxVlNcG8nXGP7Vp3Eo2KgnXDpH6Hnyj9Q0LvIdzKM&dib_tag=se&keywords=placa+em+constru%C3%A7%C3%A3o&qid=1791637758&sprefix=placa+em+constru%C3%A7%C3%A3o%2Caps%2C188&sr=8-10"><bold>Amazon</bold></a><br>
-        <a class="marketplace-link" style="background-color: #007a7c; color: white"  href="https://www.amazon.com.br/Placa-Aten%C3%A7%C3%A3o-Shape-Constru%C3%A7%C3%A3o-18x23/dp/B09G8F7CG1/ref=sr_1_10?__mk_pt_BR=%C3%85M%C3%85%C5%BD%C3%95%C3%91&crid=391NCLIRO5THN&dib=eyJ2IjoiMSJ9.j6wTunJaeL7CZ1IgNc2gjF_4BP-Dl7YUqxE_5LG0NUsg0ARA701OwqVgGGdBsdFYt83-w-PEqD5LfJ4lQ8K293_ZLeisui_gVrWAkOODfZa58a4o_AcoY_UotDebdw2f81Xc4Rqtn8-wQi6DTWSdtVfxBf-U8orx2QqSNHXxGhhQql-JknsE4YULllhg4X46R8i62IMZldDY85B828AefqmYajrmmr1A1gkAoRh-yH8my4xCPg3Y7Ank7EOtGvtaeK3lyGfD01vnDGepCXfYzo91_v399AYaYd5k1AJm45Q.L4cxVlNcG8nXGP7Vp3Eo2KgnXDpH6Hnyj9Q0LvIdzKM&dib_tag=se&keywords=placa+em+constru%C3%A7%C3%A3o&qid=1791637758&sprefix=placa+em+constru%C3%A7%C3%A3o%2Caps%2C188&sr=8-10"><bold>Estante Virtual</bold></a><br>
-        <a class="marketplace-link" style="background-color: #136EF8; color: white"   href="https://www.amazon.com.br/Placa-Aten%C3%A7%C3%A3o-Shape-Constru%C3%A7%C3%A3o-18x23/dp/B09G8F7CG1/ref=sr_1_10?__mk_pt_BR=%C3%85M%C3%85%C5%BD%C3%95%C3%91&crid=391NCLIRO5THN&dib=eyJ2IjoiMSJ9.j6wTunJaeL7CZ1IgNc2gjF_4BP-Dl7YUqxE_5LG0NUsg0ARA701OwqVgGGdBsdFYt83-w-PEqD5LfJ4lQ8K293_ZLeisui_gVrWAkOODfZa58a4o_AcoY_UotDebdw2f81Xc4Rqtn8-wQi6DTWSdtVfxBf-U8orx2QqSNHXxGhhQql-JknsE4YULllhg4X46R8i62IMZldDY85B828AefqmYajrmmr1A1gkAoRh-yH8my4xCPg3Y7Ank7EOtGvtaeK3lyGfD01vnDGepCXfYzo91_v399AYaYd5k1AJm45Q.L4cxVlNcG8nXGP7Vp3Eo2KgnXDpH6Hnyj9Q0LvIdzKM&dib_tag=se&keywords=placa+em+constru%C3%A7%C3%A3o&qid=1791637758&sprefix=placa+em+constru%C3%A7%C3%A3o%2Caps%2C188&sr=8-10"><bold>Magazine Luiza</bold></a><br>
-        <a class="marketplace-link" style="background-color: black; color: white"   href="https://www.amazon.com.br/Placa-Aten%C3%A7%C3%A3o-Shape-Constru%C3%A7%C3%A3o-18x23/dp/B09G8F7CG1/ref=sr_1_10?__mk_pt_BR=%C3%85M%C3%85%C5%BD%C3%95%C3%91&crid=391NCLIRO5THN&dib=eyJ2IjoiMSJ9.j6wTunJaeL7CZ1IgNc2gjF_4BP-Dl7YUqxE_5LG0NUsg0ARA701OwqVgGGdBsdFYt83-w-PEqD5LfJ4lQ8K293_ZLeisui_gVrWAkOODfZa58a4o_AcoY_UotDebdw2f81Xc4Rqtn8-wQi6DTWSdtVfxBf-U8orx2QqSNHXxGhhQql-JknsE4YULllhg4X46R8i62IMZldDY85B828AefqmYajrmmr1A1gkAoRh-yH8my4xCPg3Y7Ank7EOtGvtaeK3lyGfD01vnDGepCXfYzo91_v399AYaYd5k1AJm45Q.L4cxVlNcG8nXGP7Vp3Eo2KgnXDpH6Hnyj9Q0LvIdzKM&dib_tag=se&keywords=placa+em+constru%C3%A7%C3%A3o&qid=1791637758&sprefix=placa+em+constru%C3%A7%C3%A3o%2Caps%2C188&sr=8-10"><bold>Loja UmLivro</bold></a><br>
-        <a class="marketplace-link" style="background-color: #F8132E; color: white"   href="https://www.amazon.com.br/Placa-Aten%C3%A7%C3%A3o-Shape-Constru%C3%A7%C3%A3o-18x23/dp/B09G8F7CG1/ref=sr_1_10?__mk_pt_BR=%C3%85M%C3%85%C5%BD%C3%95%C3%91&crid=391NCLIRO5THN&dib=eyJ2IjoiMSJ9.j6wTunJaeL7CZ1IgNc2gjF_4BP-Dl7YUqxE_5LG0NUsg0ARA701OwqVgGGdBsdFYt83-w-PEqD5LfJ4lQ8K293_ZLeisui_gVrWAkOODfZa58a4o_AcoY_UotDebdw2f81Xc4Rqtn8-wQi6DTWSdtVfxBf-U8orx2QqSNHXxGhhQql-JknsE4YULllhg4X46R8i62IMZldDY85B828AefqmYajrmmr1A1gkAoRh-yH8my4xCPg3Y7Ank7EOtGvtaeK3lyGfD01vnDGepCXfYzo91_v399AYaYd5k1AJm45Q.L4cxVlNcG8nXGP7Vp3Eo2KgnXDpH6Hnyj9Q0LvIdzKM&dib_tag=se&keywords=placa+em+constru%C3%A7%C3%A3o&qid=1791637758&sprefix=placa+em+constru%C3%A7%C3%A3o%2Caps%2C188&sr=8-10"><bold>Americanas</bold></a><br>
+        <a class="marketplace-link" style="background-color: #FF9900; color: #000000"
+            href="https://www.amazon.com.br/Placa-Aten%C3%A7%C3%A3o-Shape-Constru%C3%A7%C3%A3o-18x23/dp/B09G8F7CG1/ref=sr_1_10?__mk_pt_BR=%C3%85M%C3%85%C5%BD%C3%95%C3%91&crid=391NCLIRO5THN&dib=eyJ2IjoiMSJ9.j6wTunJaeL7CZ1IgNc2gjF_4BP-Dl7YUqxE_5LG0NUsg0ARA701OwqVgGGdBsdFYt83-w-PEqD5LfJ4lQ8K293_ZLeisui_gVrWAkOODfZa58a4o_AcoY_UotDebdw2f81Xc4Rqtn8-wQi6DTWSdtVfxBf-U8orx2QqSNHXxGhhQql-JknsE4YULllhg4X46R8i62IMZldDY85B828AefqmYajrmmr1A1gkAoRh-yH8my4xCPg3Y7Ank7EOtGvtaeK3lyGfD01vnDGepCXfYzo91_v399AYaYd5k1AJm45Q.L4cxVlNcG8nXGP7Vp3Eo2KgnXDpH6Hnyj9Q0LvIdzKM&dib_tag=se&keywords=placa+em+constru%C3%A7%C3%A3o&qid=1791637758&sprefix=placa+em+constru%C3%A7%C3%A3o%2Caps%2C188&sr=8-10">
+            <bold>Amazon</bold>
+        </a><br>
+        <a class="marketplace-link" style="background-color: #007a7c; color: white"
+            href="https://www.amazon.com.br/Placa-Aten%C3%A7%C3%A3o-Shape-Constru%C3%A7%C3%A3o-18x23/dp/B09G8F7CG1/ref=sr_1_10?__mk_pt_BR=%C3%85M%C3%85%C5%BD%C3%95%C3%91&crid=391NCLIRO5THN&dib=eyJ2IjoiMSJ9.j6wTunJaeL7CZ1IgNc2gjF_4BP-Dl7YUqxE_5LG0NUsg0ARA701OwqVgGGdBsdFYt83-w-PEqD5LfJ4lQ8K293_ZLeisui_gVrWAkOODfZa58a4o_AcoY_UotDebdw2f81Xc4Rqtn8-wQi6DTWSdtVfxBf-U8orx2QqSNHXxGhhQql-JknsE4YULllhg4X46R8i62IMZldDY85B828AefqmYajrmmr1A1gkAoRh-yH8my4xCPg3Y7Ank7EOtGvtaeK3lyGfD01vnDGepCXfYzo91_v399AYaYd5k1AJm45Q.L4cxVlNcG8nXGP7Vp3Eo2KgnXDpH6Hnyj9Q0LvIdzKM&dib_tag=se&keywords=placa+em+constru%C3%A7%C3%A3o&qid=1791637758&sprefix=placa+em+constru%C3%A7%C3%A3o%2Caps%2C188&sr=8-10">
+            <bold>Estante Virtual</bold>
+        </a><br>
+        <a class="marketplace-link" style="background-color: #136EF8; color: white"
+            href="https://www.amazon.com.br/Placa-Aten%C3%A7%C3%A3o-Shape-Constru%C3%A7%C3%A3o-18x23/dp/B09G8F7CG1/ref=sr_1_10?__mk_pt_BR=%C3%85M%C3%85%C5%BD%C3%95%C3%91&crid=391NCLIRO5THN&dib=eyJ2IjoiMSJ9.j6wTunJaeL7CZ1IgNc2gjF_4BP-Dl7YUqxE_5LG0NUsg0ARA701OwqVgGGdBsdFYt83-w-PEqD5LfJ4lQ8K293_ZLeisui_gVrWAkOODfZa58a4o_AcoY_UotDebdw2f81Xc4Rqtn8-wQi6DTWSdtVfxBf-U8orx2QqSNHXxGhhQql-JknsE4YULllhg4X46R8i62IMZldDY85B828AefqmYajrmmr1A1gkAoRh-yH8my4xCPg3Y7Ank7EOtGvtaeK3lyGfD01vnDGepCXfYzo91_v399AYaYd5k1AJm45Q.L4cxVlNcG8nXGP7Vp3Eo2KgnXDpH6Hnyj9Q0LvIdzKM&dib_tag=se&keywords=placa+em+constru%C3%A7%C3%A3o&qid=1791637758&sprefix=placa+em+constru%C3%A7%C3%A3o%2Caps%2C188&sr=8-10">
+            <bold>Magazine Luiza</bold>
+        </a><br>
+        <a class="marketplace-link" style="background-color: black; color: white"
+            href="https://www.amazon.com.br/Placa-Aten%C3%A7%C3%A3o-Shape-Constru%C3%A7%C3%A3o-18x23/dp/B09G8F7CG1/ref=sr_1_10?__mk_pt_BR=%C3%85M%C3%85%C5%BD%C3%95%C3%91&crid=391NCLIRO5THN&dib=eyJ2IjoiMSJ9.j6wTunJaeL7CZ1IgNc2gjF_4BP-Dl7YUqxE_5LG0NUsg0ARA701OwqVgGGdBsdFYt83-w-PEqD5LfJ4lQ8K293_ZLeisui_gVrWAkOODfZa58a4o_AcoY_UotDebdw2f81Xc4Rqtn8-wQi6DTWSdtVfxBf-U8orx2QqSNHXxGhhQql-JknsE4YULllhg4X46R8i62IMZldDY85B828AefqmYajrmmr1A1gkAoRh-yH8my4xCPg3Y7Ank7EOtGvtaeK3lyGfD01vnDGepCXfYzo91_v399AYaYd5k1AJm45Q.L4cxVlNcG8nXGP7Vp3Eo2KgnXDpH6Hnyj9Q0LvIdzKM&dib_tag=se&keywords=placa+em+constru%C3%A7%C3%A3o&qid=1791637758&sprefix=placa+em+constru%C3%A7%C3%A3o%2Caps%2C188&sr=8-10">
+            <bold>Loja UmLivro</bold>
+        </a><br>
+        <a class="marketplace-link" style="background-color: #F8132E; color: white"
+            href="https://www.amazon.com.br/Placa-Aten%C3%A7%C3%A3o-Shape-Constru%C3%A7%C3%A3o-18x23/dp/B09G8F7CG1/ref=sr_1_10?__mk_pt_BR=%C3%85M%C3%85%C5%BD%C3%95%C3%91&crid=391NCLIRO5THN&dib=eyJ2IjoiMSJ9.j6wTunJaeL7CZ1IgNc2gjF_4BP-Dl7YUqxE_5LG0NUsg0ARA701OwqVgGGdBsdFYt83-w-PEqD5LfJ4lQ8K293_ZLeisui_gVrWAkOODfZa58a4o_AcoY_UotDebdw2f81Xc4Rqtn8-wQi6DTWSdtVfxBf-U8orx2QqSNHXxGhhQql-JknsE4YULllhg4X46R8i62IMZldDY85B828AefqmYajrmmr1A1gkAoRh-yH8my4xCPg3Y7Ank7EOtGvtaeK3lyGfD01vnDGepCXfYzo91_v399AYaYd5k1AJm45Q.L4cxVlNcG8nXGP7Vp3Eo2KgnXDpH6Hnyj9Q0LvIdzKM&dib_tag=se&keywords=placa+em+constru%C3%A7%C3%A3o&qid=1791637758&sprefix=placa+em+constru%C3%A7%C3%A3o%2Caps%2C188&sr=8-10">
+            <bold>Americanas</bold>
+        </a><br>
     </dialog>
 
     <script>
@@ -382,6 +429,11 @@
             const dialog = document.getElementById("ondeComprarDialog");
             dialog.showModal();
         }
+    </script>
+
+    <!-- SEO script -->
+    <script type="application/ld+json">
+        { "@context": "https://schema.org", "@type": "Book", "name": "O Preço do Flautista", "author": { "@type": "Person", "name": "João Pedro L. Affonso" }, "description": "Uma releitura moderna de um conto imortal...", "genre": "Literatura Infantil", "inLanguage": "pt-BR", "publisher": { "@type": "Organization", "name": "Ases da Literatura" } } 
     </script>
 </body>
 
